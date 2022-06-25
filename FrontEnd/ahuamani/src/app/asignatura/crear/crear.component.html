@@ -1,0 +1,32 @@
+<br>
+<div class="card border-info mb-3">
+  <h5 class="card-header">{{titulo}}</h5>
+  <div class="card-body">
+    <form (ngSubmit) = "crearAsignatura()">
+      <div class="row mb-3">
+        <label for="apellido" class="col-sm-2 col-form-label">Denominacion</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="Ingrese la Denominacion" [(ngModel)]="asignatura.denominacion" name="apellido">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="apellido" class="col-sm-2 col-form-label">Sigla</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="Ingrese la Sigla" [(ngModel)]="asignatura.sigla" name="apellido">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="apellido" class="col-sm-2 col-form-label">Credito</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="Ingrese los creditos" [(ngModel)]="asignatura.credito" name="apellido">
+        </div>
+      </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-outline-danger" type="button" routerLink="/asignatura">Cancelar</button>
+          <button class="btn btn-outline-primary" role="button">Registrar</button>
+        </div>
+
+    </form>
+  </div>
+</div>
